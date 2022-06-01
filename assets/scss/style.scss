@@ -1,9 +1,14 @@
 $colorWhite: #fff;
 $weight700: 700;
+$weight600: 600;
 $weight400: 400;
 
 @mixin weightColor {
     font-weight: $weight700;
+    color: $colorWhite
+}
+@mixin weight600Color {
+    font-weight: $weight600;
     color: $colorWhite
 }
 @mixin weight400Color {
@@ -22,7 +27,12 @@ body{
 }
 .header {
     background: url(../img/header.png) no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    padding: 200px 0;
+    .row {
+        max-width: 1200px;
+        margin: auto;
+    }
     .headerCol {
         h1 {
             font-size: 64px;
@@ -31,6 +41,26 @@ body{
         p {
             @include weight400Color;
             font-size: 22px;
+        }
+        .redButton{
+            color: #fff;
+            font-size: 20px;
+            background-color: #F44;
+            padding: 13px 10px;
+            font-weight: $weight700;
+        }
+    }
+    &:not(.headerCol) {
+        .itemImg {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .item {
+            @include weight600Color;
+            font-size: 22px;
+            margin: 0;
+            margin-left: 20px;
         }
     }
 }

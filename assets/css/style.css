@@ -10,7 +10,12 @@ body {
 
 .header {
   background: url(../img/header.png) no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  padding: 200px 0;
+}
+.header .row {
+  max-width: 1200px;
+  margin: auto;
 }
 .header .headerCol h1 {
   font-size: 64px;
@@ -21,4 +26,27 @@ body {
   font-weight: 400;
   color: #fff;
   font-size: 22px;
+}
+.header .headerCol .redButton {
+  color: #fff;
+  font-size: 20px;
+  background-color: #F44;
+  padding: 13px 10px;
+  font-weight: 700;
+}
+.header:not(.headerCol) .itemImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+.header:not(.headerCol) .item {
+  font-weight: 600;
+  color: #fff;
+  font-size: 22px;
+  margin: 0;
+  margin-left: 20px;
 }
