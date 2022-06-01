@@ -7,3 +7,18 @@ body {
   min-width: 360px;
   color: #7a7a7a;
 }
+
+.header {
+  background: url(../img/header.png) no-repeat;
+  background-size: cover;
+}
+.header .headerCol h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #fff;
+}
+.header .headerCol p {
+  font-weight: 400;
+  color: #fff;
+  font-size: 22px;
+}

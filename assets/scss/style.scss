@@ -1,3 +1,16 @@
+$colorWhite: #fff;
+$weight700: 700;
+$weight400: 400;
+
+@mixin weightColor {
+    font-weight: $weight700;
+    color: $colorWhite
+}
+@mixin weight400Color {
+    font-weight: $weight400;
+    color: $colorWhite
+}
+
 body{
     outline: 1px solid red;
     margin: auto;
@@ -6,4 +19,18 @@ body{
     max-width: 1920px;
     min-width: 360px;
     color: #7a7a7a;
+}
+.header {
+    background: url(../img/header.png) no-repeat;
+    background-size: cover;
+    .headerCol {
+        h1 {
+            font-size: 64px;
+            @include weightColor;
+        }
+        p {
+            @include weight400Color;
+            font-size: 22px;
+        }
+    }
 }
