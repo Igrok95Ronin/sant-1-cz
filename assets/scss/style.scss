@@ -52,6 +52,7 @@ body{
         margin: auto;
     }
     .headerCol {
+        padding: 0;
         h1 {
             font-size: 64px;
             @include weightColor;
@@ -74,5 +75,49 @@ body{
             margin: 0;
             margin-left: 20px;
         }
+        @include button;
     }
+}
+
+@media (max-width: 992px) {
+    .header {
+        background-size: cover;
+        background-position: 59% 0px;
+        padding: 0;
+        .headerCol{
+            h1 {
+                font-size: 50px;
+            }
+            p {
+                margin-bottom: 40px;
+            }
+        }
+        :not(.headerCol) {
+            .itemImg {
+                flex-direction: column;
+            }
+            img {
+                margin-bottom: 20px;
+            }
+        }
+
+    } 
+}
+
+// @media (max-width: 576px) {
+
+// }
+
+@media (max-width: 576px) {
+    .header {
+        .headerCol{
+            h1 {
+                font-size: 33px;
+            }
+            p {
+                font-size: 18px;
+                margin-top: 20px;
+            }
+        }
+    } 
 }
