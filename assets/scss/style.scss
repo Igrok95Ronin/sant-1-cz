@@ -15,6 +15,24 @@ $weight400: 400;
     font-weight: $weight400;
     color: $colorWhite
 }
+@mixin button() {
+    .redButton{
+        color: #fff;
+        font-size: 20px;
+        background-color: #F44;
+        padding: 13px 10px;
+        font-weight: $weight700;
+        @content;
+        &:hover {
+            color: #000;
+            font-size: 20px;
+            background-color: #fff;
+            padding: 13px 10px;
+            font-weight: $weight700;
+            @content;                
+        }
+    }
+}
 
 body{
     outline: 1px solid red;
@@ -42,13 +60,7 @@ body{
             @include weight400Color;
             font-size: 22px;
         }
-        .redButton{
-            color: #fff;
-            font-size: 20px;
-            background-color: #F44;
-            padding: 13px 10px;
-            font-weight: $weight700;
-        }
+        @include button;
     }
     &:not(.headerCol) {
         .itemImg {
