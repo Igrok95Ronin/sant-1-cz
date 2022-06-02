@@ -1,4 +1,5 @@
 $colorWhite: #fff;
+$colorBlack: #3E3E3E;
 $weight700: 700;
 $weight600: 600;
 $weight400: 400;
@@ -78,6 +79,153 @@ body{
         @include button;
     }
 }
+.sectionFluid {
+    max-width: 1200px;
+    .sectionCol {
+        h2 {
+            text-align: center;
+            font-weight: $weight700;
+            font-size: 42px;
+            text-transform: uppercase;
+            color: $colorBlack;
+        }
+
+    }
+}
+.article {
+    max-width: 1200px;
+    margin:auto;
+    .list {
+        list-style: none;
+        padding: 0;
+        .liList {
+            display: flex;
+            align-items: center;
+            height: 75px;
+            margin-bottom: 20px;
+            background: #FFF;
+            box-shadow: 2px 4px 20px rgb(0 0 0 / 30%);
+            border-radius: 5px;
+        }
+        img {
+            width: 45px;
+            margin: 0 50px;
+        }
+        p {
+            font-weight: $weight400;
+            font-size: 20px;
+            color: $colorBlack;
+            margin: 0;
+        }
+    }
+    .forms {
+        h6 {
+            font-size: 26px;
+            color: #000;
+            font-weight: $weight600;
+        }
+        .formBtn {
+            background-color: #F44;
+            color: #fff;
+            width: 100%;
+            &:hover {
+            background-color: rgb(254, 24, 24);
+            color: #fff;
+            width: 100%;
+            }
+        }
+    }
+}
+.articleRow2 {
+    max-width: 1200px;
+    margin: auto;
+    h2 {
+        font-size: 30px;
+        font-weight: 600;
+        color: $colorBlack;
+    }
+    p {
+        font-size: 17px;
+        font-weight:$weight400;
+        color: $colorBlack;
+        line-height: 22px;
+    }
+    .articleCol2 {
+        display: flex;
+        justify-content:space-between;
+        
+        .item {
+            width: 32%;
+            text-align: center;
+            &:nth-child(1) {
+                background: #FFF;
+                box-shadow: 0px 0px 10px rgb(68 188 255 / 70%);
+                border: none;
+                border-radius: 5px;
+                p {
+                    color: #44A5FF;
+                    margin: 0;
+                    padding: 10px 0;
+                }
+                                
+            }
+            &:nth-child(2) {
+                background: #FFF;
+                box-shadow: 0px 0px 10px rgb(255 68 68 / 70%);
+                border: none;
+                border-radius: 5px;
+                p {
+                    color: #F44;
+                    margin: 0;
+                    padding: 10px 0;
+                } 
+              
+            }
+            &:nth-child(3) {
+                background: #FFF;
+                box-shadow: 0px 0px 10px rgb(255 248 68 / 70%);
+                border: none;
+                border-radius: 5px;  
+                p {
+                    color: #eada45;
+                    margin: 0;
+                    padding: 10px 0;
+                }              
+            }
+            p {
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 51px;
+            }
+        }
+    }
+    .articleCol3 {
+        background: #FFF;
+        box-shadow: 0px 0px 30px rgb(0 0 0 / 20%);
+        border-radius: 5px;
+        .item {
+            h5 {
+                font-size: 30px;
+                font-weight: $weight600;
+                color: $colorBlack;
+            }
+            p {
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 32px;
+                color: #3E3E3E;
+            }
+            @include button(){
+                &:hover {
+                    background-color: rgb(254, 24, 24);
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
 
 @media (max-width: 992px) {
     .header {
@@ -104,9 +252,15 @@ body{
     } 
 }
 
-// @media (max-width: 576px) {
-
-// }
+@media (max-width: 768px) {
+    .sectionFluid {
+        .sectionCol {
+            h2 {
+                font-size: 34px;
+            }
+        }
+    }
+}
 
 @media (max-width: 576px) {
     .header {
@@ -119,5 +273,36 @@ body{
                 margin-top: 20px;
             }
         }
-    } 
+    }
+    .sectionFluid {
+        .sectionCol {
+            h2 {
+                font-size: 25px;
+            }
+        }
+    }
+    .article {
+        .list {
+            img {
+                margin: 0 30px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        .forms {
+            h6 {
+                font-size: 22px;
+            }
+        }
+    }
+    .articleRow2 {
+        h2 {
+            font-size: 23px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+   
 }
