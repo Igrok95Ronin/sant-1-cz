@@ -241,6 +241,49 @@ body {
   background-color: rgb(254, 24, 24);
   color: #fff;
 }
+.articleRow2 .articleCol4 p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #3E3E3E;
+  text-align: center;
+  padding: 0;
+}
+
+.article3 .container-fluid {
+  background-color: #f3f3f3;
+}
+.article3 .container-fluid .article3Row {
+  max-width: 1200px;
+  margin: auto;
+}
+.article3 .container-fluid .article3Row .article3Col {
+  text-align: center;
+}
+.article3 .container-fluid .article3Row .article3Col h2 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 109.69%;
+  text-transform: uppercase;
+  color: #3E3E3E;
+}
+.article3 .container-fluid .article3Row .article3Box {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.article3 .container-fluid .article3Row .article3Box .item {
+  width: calc(25% - 10px);
+  margin-right: 10px;
+}
+.article3 .container-fluid .article3Row .article3Box .item:nth-child(4n) {
+  margin-right: 0;
+}
 
 @media (max-width: 992px) {
   .header {
@@ -267,6 +310,10 @@ body {
 @media (max-width: 768px) {
   .sectionFluid .sectionCol h2 {
     font-size: 34px;
+  }
+
+  .article3 .container-fluid .article3Row .article3Col h2 {
+    font-size: 35px;
   }
 }
 @media (max-width: 576px) {
@@ -297,5 +344,9 @@ body {
   }
   .articleRow2 p {
     font-size: 14px;
+  }
+
+  .articleRow2 .articleCol4 p {
+    font-size: 16px;
   }
 }
