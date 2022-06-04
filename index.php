@@ -290,28 +290,28 @@ $title = $text . ' ' . $city;
                             </div>
                             <div class="col-12 itemsBox">
                                 <div class="item">
-                                    <img src="assets/img/1.png" alt="">
+                                    <img src="assets/img/1.1.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="assets/img/2.png" alt="">
+                                    <img src="assets/img/2.2.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="assets/img/3.png" alt="">
+                                    <img src="assets/img/3.3.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="assets/img/4.png" alt="">
+                                    <img src="assets/img/4.4.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="assets/img/6.png" alt="">
+                                    <img src="assets/img/6.6.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="assets/img/7.png" alt="">
+                                    <img src="assets/img/7.7.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="assets/img/8.png" alt="">
+                                    <img src="assets/img/8.8.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="assets/img/9.png" alt="">
+                                    <img src="assets/img/9.9.jpg" alt="">
                                 </div>
                             </div>
                         </div>
