@@ -36,7 +36,6 @@ $weight400: 400;
 }
 
 body{
-    outline: 1px solid red;
     margin: auto;
     padding: 0;
     font: 15px Helvetica,Arial,sans-serif;
@@ -464,6 +463,14 @@ body{
             img {
                 max-width: 100%;
             }
+        }
+    }
+}
+.footer {
+    .container-fluid {
+        .col-12 {
+            background-color: #000;
+            font-weight: 900;
         }
     }
 }
