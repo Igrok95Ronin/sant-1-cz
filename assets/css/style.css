@@ -378,6 +378,76 @@ body {
   color: #fff;
 }
 
+.article5 .row {
+  max-width: 1200px;
+  margin: auto;
+}
+.article5 .article5Col {
+  background-color: #f3f3f3;
+}
+.article5 .article5Col h2 {
+  font-weight: 700;
+  font-size: clamp(32px, 5vw, 42px);
+  line-height: 109.69%;
+  text-transform: uppercase;
+  color: #3E3E3E;
+  text-align: center;
+}
+.article5 .article5Col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.article5 .article5Col1 img {
+  max-width: 40%;
+}
+.article5 .article5Col1 .item {
+  margin-left: 70px;
+}
+.article5 .article5Col1 .item h3 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 109.69%;
+  color: #3E3E3E;
+}
+.article5 .article5Col1 .item .opacity {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  color: #3E3E3E;
+  opacity: 0.6;
+}
+.article5 .article5Col1 .item ul {
+  padding: 0;
+}
+.article5 .article5Col1 .item ul li {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 37px;
+  color: #3E3E3E;
+  list-style: none;
+}
+.article5 .article5Col1 .item ul li::before {
+  content: url(../img/bookmark-check-fill.svg);
+  margin-right: 10px;
+}
+.article5 .article5Col1 .item p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #3E3E3E;
+}
+.article5 .article5Col1 .item .gift::before {
+  content: url(../img/gift-fill.svg);
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+  left: 0;
+}
+
 @media (max-width: 992px) {
   .header {
     background-size: cover;
@@ -442,6 +512,21 @@ body {
   .article4 .box4 p {
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .article5 .article5Col1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px;
+  }
+  .article5 .article5Col1 img {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .article5 .article5Col1 .item {
+    margin-left: 0px;
   }
 }
 @media (max-width: 576px) {
