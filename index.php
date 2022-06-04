@@ -4,8 +4,8 @@ $site_data      = json_decode(file_get_contents('http://templates.jquery.link/ap
 $phone_name     = $site_data['phone_name'];
 $phone_href     = $site_data['phone_href'];
 
-$text           = str_replace('+', ' ', trim($_GET['t'] ?? 'Entrumpelung'));
-$city           = str_replace('+', ' ', trim($_GET['n'] ?? 'in der nahe'));
+$text           = str_replace('+', ' ', trim($_GET['t'] ?? 'INSTALATÉŘI'));
+$city           = str_replace('+', ' ', trim($_GET['n'] ?? ''));
 
 $title = $text . ' ' . $city;
 ?>
@@ -28,11 +28,11 @@ $title = $text . ' ' . $city;
             <div class="container-fluid">
                 <div class="row pt-5">
                     <div class="col-12 col-lg-8 headerCol text-center text-lg-start">
-                        <h1>INSTALATÉŘI</h1>
+                        <h1><?= $title ?></h1>
                         <p>Experti na vodu topení a pohotovost 24/7</p>
                         <div class="d-none d-lg-block">
                             <div class=" d-grid col-4 my-5 ">
-                                <a href="#" class="btn redButton">111222333</a>
+                                <a href="<?= $phone_href ?>" class="btn redButton"><?= $phone_name ?></a>
                             </div>
                         </div>
                     </div>                 
@@ -51,7 +51,7 @@ $title = $text . ' ' . $city;
                         </div>
                         <div class="d-lg-none">
                             <div class=" d-grid col-11 col-sm-5 col-md-4 my-5 m-auto">
-                                <a href="#" class="btn redButton">111222333</a>
+                                <a href="<?= $phone_href ?>" class="btn redButton"><?= $phone_name ?></a>
                             </div>
                         </div>
                     </div>                 
@@ -152,7 +152,7 @@ $title = $text . ' ' . $city;
                                     <h5>Volejte non-stop linku</h5>
                                     <p>Nebo nám zanechte svůj kontakt my Vám zavoláme zpět do 60 sekund!</p>
                                     <div class=" d-grid col-12 col-sm-5 col-md-4 mt-5 wrapeButton">
-                                        <a href="#" class="btn redButton px-5 tex">111222333</a>
+                                        <a href="<?= $phone_href ?>" class="btn redButton px-5 tex"><?= $phone_name ?></a>
                                     </div>
                                 </div>
                                 <div class="item text-lg-end">
@@ -248,7 +248,7 @@ $title = $text . ' ' . $city;
                                     <p>Chcete objednat službu nebo poradit?</p>
                                     <p class="ml"><span>Volejte nám 24/7</span></p>
                                     <div class=" d-grid col-12 col-sm-5 col-md-2">
-                                        <a href="#" class="btn redButton">111222333</a>
+                                        <a href="<?= $phone_href ?>" class="btn redButton"><?= $phone_name ?></a>
                                     </div>
                                 </div>
                             </div>
@@ -281,7 +281,7 @@ $title = $text . ' ' . $city;
                                     <p>V případě reklamace vyřídíme 96 % reklamačních případů do 24 hodin.</p>
                                 </div>
                                 <div class=" d-grid col-12 col-sm-5 col-md-2">
-                                    <a href="#" class="btn redButton">111222333</a>
+                                    <a href="<?= $phone_href ?>" class="btn redButton"><?= $phone_name ?></a>
                                 </div>
                             </div>
                             <div class="col-12 article5Col3 py-5">
